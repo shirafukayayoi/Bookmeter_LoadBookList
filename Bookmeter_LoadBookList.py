@@ -4,7 +4,7 @@ import time
 import csv
 
 def main():
-    url = "https://bookmeter.com/users/1291485/books/stacked"
+    url = input("Bookmeterの本棚ページのURLを入力してください: ")
     web_scraping = WebScraping(url)
     data = web_scraping.get_html()
     csv_writer = CSVwriter(data)
