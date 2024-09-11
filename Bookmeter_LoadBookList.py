@@ -47,7 +47,7 @@ class WebScraping:
         
         # 各ページのリンクを取得して処理
         for i in range(1, int(last_page_number) + 1):
-            page_url = f"https://bookmeter.com/users/1291485/books/stacked?page={i}"
+            page_url = self.url + f"?page={i}"
             
             # リトライ処理の統合
             for attempt in range(3):  # 最大3回リトライ
